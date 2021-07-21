@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.12.1">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.Alternative">
+            <fields>
+                <field type="STRING" length="255" name="description" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Answer">
+            <fields>
+                <field type="STRING" length="255" name="question" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="alternative" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Degree">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Integrant" fetchType="LAZY" name="commission" nullable="true" collection="true"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Grade" fetchType="LAZY" name="grades" nullable="true" collection="true"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Manager" fetchType="LAZY" name="manager" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Tracking" fetchType="LAZY" name="tracking" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Grade">
+            <fields>
+                <field type="INTEGER" length="255" name="number" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="parallel" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Student" fetchType="LAZY" name="students" nullable="true" collection="true"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Syllabus" fetchType="LAZY" name="syllabuses" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.ImproveAction">
+            <fields>
+                <field type="STRING" length="255" name="description" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="completed" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.ImprovePlan">
+            <fields>
+                <field type="INTEGER" length="255" name="duration" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.ImproveAction" fetchType="LAZY" name="improveActions" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Integrant">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Manager">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Period">
+            <fields>
+                <field type="LOCALDATE" length="255" name="initDate" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="endDate" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Degree" fetchType="LAZY" name="degree" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Question">
+            <fields>
+                <field type="STRING" length="255" name="description" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Sheet">
+            <fields>
+                <relationField type="COMPOSITION" reference="com.company.model.Answer" fetchType="LAZY" name="answers" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="denomination" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Stage">
+            <fields>
+                <field type="STRING" length="255" name="denomination" nullable="false" collection="false"/>
+                <field type="LOCALDATE" length="255" name="executionDate" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.ImprovePlan" fetchType="LAZY" name="improvePlan" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Question" fetchType="LAZY" name="questions" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Student">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="lastName" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
+                <field type="FLOAT" length="255" name="rate" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Syllabus">
+            <fields>
+                <field type="STRING" length="255" name="denomination" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Teacher" fetchType="LAZY" name="teacher" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Sheet" fetchType="LAZY" name="sheets" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Teacher">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Tracking">
+            <fields>
+                <relationField type="COMPOSITION" reference="com.company.model.Stage" fetchType="LAZY" name="stages" nullable="true" collection="true"/>
+                <relationField type="COMPOSITION" reference="com.company.model.Alternative" fetchType="LAZY" name="alternatives" nullable="true" collection="true"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>

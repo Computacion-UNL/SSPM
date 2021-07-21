@@ -1,0 +1,75 @@
+{
+  "modelVersion" : "2.0",
+  "previousArtifactVersion" : "1.11.62",
+  "id" : "customAlertDanger",
+  "name" : "alertDanger",
+  "lastUpdate" : 1614041906868,
+  "template" : "@customAlertDanger.tpl.html",
+  "controller" : "@customAlertDanger.ctrl.js",
+  "custom" : true,
+  "properties" : [
+    {
+      "label" : "Message",
+      "name" : "message",
+      "help" : "Alert Message",
+      "type" : "text",
+      "defaultValue" : "Error",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Show the alert?",
+      "name" : "show",
+      "type" : "boolean",
+      "defaultValue" : true,
+      "bond" : "expression"
+    },
+    {
+      "label" : "Alert Type",
+      "name" : "type",
+      "type" : "choice",
+      "defaultValue" : "success",
+      "choiceValues" : [
+        "success",
+        "info",
+        "warning",
+        "danger"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Color",
+      "name" : "color",
+      "caption" : "See the next url: https://codepen.io/badboy/pen/BKPQWr/",
+      "help" : "See the next url:  https://codepen.io/badboy/pen/BKPQWr/",
+      "type" : "text",
+      "bond" : "constant"
+    },
+    {
+      "label" : "Font Color",
+      "name" : "fontColor",
+      "caption" : "Font Color",
+      "type" : "boolean",
+      "defaultValue" : false,
+      "bond" : "expression"
+    }
+  ],
+  "assets" : [
+    {
+      "id" : "cedf6145-7282-441b-84bb-bb4417621bce",
+      "name" : "material-colors.min.css",
+      "type" : "css",
+      "order" : 2,
+      "external" : false
+    },
+    {
+      "id" : "24777411-f7d4-4c48-8748-ace66baa5217",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 1,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

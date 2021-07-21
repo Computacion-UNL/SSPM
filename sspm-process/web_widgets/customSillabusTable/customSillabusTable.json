@@ -1,0 +1,48 @@
+{
+  "modelVersion" : "2.0",
+  "previousArtifactVersion" : "1.11.62",
+  "id" : "customSillabusTable",
+  "name" : "sillabusTable",
+  "lastUpdate" : 1613184183499,
+  "template" : "@customSillabusTable.tpl.html",
+  "controller" : "@customSillabusTable.ctrl.js",
+  "custom" : true,
+  "properties" : [
+    {
+      "label" : "Show widget",
+      "name" : "show",
+      "help" : "If boolean passed is true the custom widget showed, if false it does not show.",
+      "type" : "boolean",
+      "defaultValue" : false,
+      "bond" : "expression"
+    },
+    {
+      "label" : "Value to Display",
+      "name" : "values",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Header Values",
+      "name" : "headerValues",
+      "help" : "Values to display in the headerr tables",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Content Type",
+      "name" : "type",
+      "type" : "choice",
+      "defaultValue" : "Sillabus",
+      "choiceValues" : [
+        "Sillabus",
+        "Students"
+      ],
+      "bond" : "expression"
+    }
+  ],
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

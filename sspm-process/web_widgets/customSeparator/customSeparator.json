@@ -1,0 +1,15 @@
+{
+  "modelVersion" : "2.0",
+  "previousArtifactVersion" : "1.11.62",
+  "id" : "customSeparator",
+  "name" : "separator",
+  "lastUpdate" : 1613430491726,
+  "template" : "@customSeparator.tpl.html",
+  "controller" : "@customSeparator.ctrl.js",
+  "custom" : true,
+  "properties" : [ ],
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

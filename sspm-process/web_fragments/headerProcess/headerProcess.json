@@ -1,0 +1,116 @@
+{
+  "modelVersion" : "2.0",
+  "id" : "headerProcess",
+  "name" : "headerProcess",
+  "lastUpdate" : 1613434172376,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "cac1f1b9-5403-4de3-9087-673a01b3bbf0",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 6,
+                "md" : 6,
+                "lg" : 6
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "srcType" : {
+                  "type" : "constant",
+                  "value" : "Asset"
+                },
+                "url" : {
+                  "type" : "constant"
+                },
+                "assetName" : {
+                  "type" : "constant",
+                  "value" : "unlLogo.png"
+                },
+                "alt" : {
+                  "type" : "interpolation",
+                  "value" : "imageUnl"
+                }
+              },
+              "reference" : "9da9f590-00bf-49ea-9b9d-47da109ef1ce",
+              "hasValidationError" : false,
+              "id" : "pbImage"
+            },
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 6,
+                "md" : 6,
+                "lg" : 6
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "<b>Seguimiento al sílabo y Plan de Mejoras</b>"
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 2"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                }
+              },
+              "reference" : "8cfca264-2390-453f-b49b-cc0bdda8fcd3",
+              "hasValidationError" : false,
+              "id" : "pbTitle"
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : { },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

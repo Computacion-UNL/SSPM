@@ -1,0 +1,23 @@
+{
+  "modelVersion" : "2.0",
+  "previousArtifactVersion" : "1.10.12",
+  "id" : "customLivingApplicationIFrameV4",
+  "name" : "livingApplicationIFrameV4",
+  "lastUpdate" : 1601647371192,
+  "template" : "@customLivingApplicationIFrameV4.tpl.html",
+  "controller" : "@customLivingApplicationIFrameV4.ctrl.js",
+  "description" : "LivingApplicationIFrameV4 display the pages targeted by the LivingApplicationMenu.",
+  "custom" : true,
+  "properties" : [
+    {
+      "label" : "Source",
+      "name" : "src",
+      "type" : "text",
+      "bond" : "variable"
+    }
+  ],
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

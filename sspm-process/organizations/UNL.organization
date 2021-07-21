@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="UNL">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="pablo.ordonez@unl.edu.ec">
+      <firstName>Pablo</firstName>
+      <lastName>Ordoñez</lastName>
+      <title>Ing.</title>
+      <manager></manager>
+      <personalData/>
+      <professionalData>
+        <email>pablo.ordonez@unl.edu.ec</email>
+      </professionalData>
+      <password encrypted="false">unlseguimiento</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="member">
+      <displayName>Member</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="UNL">
+      <displayName>UNL</displayName>
+    </group>
+    <group name="FEIRNNR" parentPath="/UNL">
+      <displayName>FEIRNNR</displayName>
+    </group>
+    <group name="IS-C" parentPath="/UNL/FEIRNNR">
+      <displayName>Ingeniería en Sistemas/Computación</displayName>
+    </group>
+    <group name="SSPM" parentPath="/UNL/FEIRNNR/IS-C">
+      <displayName>SSPM</displayName>
+    </group>
+    <group name="Commission" parentPath="/UNL/FEIRNNR/IS-C/SSPM">
+      <displayName>Commission</displayName>
+    </group>
+    <group name="Students" parentPath="/UNL/FEIRNNR/IS-C/SSPM">
+      <displayName>Students</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>pablo.ordonez@unl.edu.ec</userName>
+      <roleName>member</roleName>
+      <groupName>IS-C</groupName>
+      <groupParentPath>/UNL/FEIRNNR</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>

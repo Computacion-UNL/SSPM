@@ -1,0 +1,457 @@
+{
+  "modelVersion" : "2.0",
+  "previousArtifactVersion" : "1.11.62",
+  "id" : "00InitForm",
+  "name" : "00InitForm",
+  "lastUpdate" : 1615095412357,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "container-position"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "3272992d-a65d-4ade-9ac7-f0693976045f",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "formContainer",
+              "dimension" : {
+                "xs" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : "container-width bordered padding-bottom-xl padding-lg"
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "82f0961d-9c66-4da5-88ae-e39c5bbc95e5",
+              "hasValidationError" : false,
+              "id" : "pbFormContainer",
+              "container" : {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12
+                },
+                "propertyValues" : { },
+                "reference" : "a5f83d0c-8816-456c-9f58-21f65f425ed8",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "fragment",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "bd2fe5ef-6d2d-4b45-82db-6a24cc7ebe2d",
+                      "hasValidationError" : false,
+                      "id" : "headerProcess",
+                      "binding" : { }
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "bbbcb68f-2b33-45bb-895e-35496515aecf",
+                      "hasValidationError" : false,
+                      "id" : "customSeparator"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "<b> Objetivo del Proceso:"
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 3"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "05b6456c-0499-4070-bd99-13f17e7a59f6",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "repeatedCollection" : {
+                          "type" : "variable",
+                          "value" : ""
+                        }
+                      },
+                      "reference" : "210728e5-0243-44e7-a241-df7454d8532b",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Default label"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "<div class='text-justify'>\nEl seguimiento al cumplimiento del sílabo debe realizarse con la finalidad de:\n<ul>\n<li>\nGarantizar un proceso educativo centrado en el logro de los resultados de\naprendizaje.\n</li>\n<li>\nVerificar el desarrollo de lo programado en el sílabo de la asignatura, curso o\nequivalente.\n</li>\n<li>\nValorar el grado de satisfacción de los estudiantes con el cumplimiento de\nlas actividades propuestas en los sílabos.\n</li>\n<li>\nProporcionar a los docentes de las asignaturas, cursos o equivalentes\ninformación sobre el cumplimiento del sílabo para su análisis,\nretroalimentación y la implementación de acciones de mejora\n</li>\n</ul>\nCon la ejecución de este proceso se asegurará la participación de los estudiantes en el seguimiento al cumplimiento\ndel sílabo, para determinar objetivamente el avance de las actividades\nplanificadas y el logro de los resultados de aprendizaje de la asignatura, curso o equivalente.\n</div>"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "3964298d-f541-4a38-aad2-8139fbbe8fa8",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
+                          }
+                        ]
+                      ]
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "<div class='alert alert-info'>\n <b>Al dar clic en iniciar proceso, inmediatamente se habilitará las tareas correspondientes para ejecutar con éxito el proceso de \"Seguimiento al sílabo y Plan de mejoras\"\n</div>"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "77f5ba29-0a27-4fc2-bb1c-210d8bb15c91",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "454aeaef-5756-47d9-8da6-0f5538fa6198",
+                      "hasValidationError" : false,
+                      "id" : "customSeparator"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "expression",
+                          "value" : "$form.$invalid"
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Iniciar Proceso"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "center"
+                        },
+                        "buttonStyle" : {
+                          "type" : "constant",
+                          "value" : "primary"
+                        },
+                        "action" : {
+                          "type" : "constant",
+                          "value" : "Start process"
+                        },
+                        "assign" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "url" : {
+                          "type" : "interpolation"
+                        },
+                        "responseStatusCode" : {
+                          "type" : "variable",
+                          "value" : ""
+                        },
+                        "dataToSend" : {
+                          "type" : "constant"
+                        },
+                        "dataFromSuccess" : {
+                          "type" : "variable",
+                          "value" : ""
+                        },
+                        "dataFromError" : {
+                          "type" : "variable",
+                          "value" : "formOutput._submitError"
+                        },
+                        "targetUrlOnSuccess" : {
+                          "type" : "interpolation",
+                          "value" : "/bonita"
+                        },
+                        "cancelText" : {
+                          "type" : "constant",
+                          "value" : "No, cancelar"
+                        },
+                        "confirmText" : {
+                          "type" : "constant",
+                          "value" : "Sí, iniciar proceso"
+                        },
+                        "titleQuestion" : {
+                          "type" : "constant",
+                          "value" : "¿Está seguro de Iniciar el Proceso de Seguimiento al sílabo y Plan de mejoras?"
+                        },
+                        "textQuestion" : {
+                          "type" : "constant",
+                          "value" : "Es una acción que no se puede revertir."
+                        }
+                      },
+                      "reference" : "a667bd06-4da9-45ee-b35d-552afbddea45",
+                      "hasValidationError" : false,
+                      "id" : "customSubmitTaskBtn"
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "e440f647-0525-4a51-bc77-83c4b1095156",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "84edaa71-f5fa-40ba-b900-ae521124aec5",
+      "name" : "unlLogo.png",
+      "type" : "img",
+      "order" : 1,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{ }"
+      ],
+      "exposed" : false
+    },
+    "submit_errors_list" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.formOutput && $data.formOutput._submitError && $data.formOutput._submitError.explanations){",
+        "\tconst liElements = $data.formOutput._submitError.explanations",
+        "\t\t.filter(cause => cause !== null)",
+        "\t\t.map(cause => \"<li>\" + cause + \"</li>\")",
+        "\t\t.join('');",
+        "\tif(liElements){",
+        "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
+        "\t}",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "",
+        "}"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "e91ca845-526b-40c1-9ef4-dd86faa5d762",
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
+}

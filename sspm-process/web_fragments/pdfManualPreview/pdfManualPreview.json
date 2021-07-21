@@ -1,0 +1,191 @@
+{
+  "modelVersion" : "2.0",
+  "id" : "pdfManualPreview",
+  "name" : "pdfManualPreview",
+  "lastUpdate" : 1614748327889,
+  "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "panel panel-default margin-bottom-sm"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable",
+            "value" : ""
+          }
+        },
+        "reference" : "2fe589f7-f585-4c92-90a7-1bfec0eda790",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 1,
+                "sm" : 1,
+                "md" : 2,
+                "lg" : 4
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Default label"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "<div class='text-center margin-top-6'>\n<img src='assets/img/pdf-icon.png'/>\n</div>"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                }
+              },
+              "reference" : "633d6b22-3674-47c8-9374-e7b75c9f5a5b",
+              "hasValidationError" : false,
+              "id" : "pbText"
+            },
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 3,
+                "md" : 3,
+                "lg" : 4
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "label" : {
+                  "type" : "interpolation",
+                  "value" : "Default label"
+                },
+                "labelPosition" : {
+                  "type" : "constant",
+                  "value" : "top"
+                },
+                "labelWidth" : {
+                  "type" : "constant",
+                  "value" : 4
+                },
+                "allowHTML" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "<hr>"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                }
+              },
+              "reference" : "69d03a95-ae92-4d08-a26b-d28465ff0e7c",
+              "hasValidationError" : false,
+              "id" : "pbText"
+            },
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 11,
+                "sm" : 8,
+                "md" : 7,
+                "lg" : 4
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "type" : {
+                  "type" : "constant",
+                  "value" : "Process document"
+                },
+                "url" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "document" : {
+                  "type" : "variable",
+                  "value" : "manual"
+                },
+                "showPreview" : {
+                  "type" : "constant",
+                  "value" : false
+                }
+              },
+              "reference" : "b9c38e62-9bed-4228-87cf-c1a30ba4547e",
+              "hasValidationError" : false,
+              "id" : "pbFileViewer"
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "manual" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    }
+  },
+  "hasValidationError" : false,
+  "type" : "fragment"
+}

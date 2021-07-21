@@ -1,0 +1,1418 @@
+{
+  "modelVersion" : "2.0",
+  "previousArtifactVersion" : "1.11.62",
+  "id" : "04ExtenderPlazoForm",
+  "name" : "04ExtenderPlazoForm",
+  "lastUpdate" : 1614719641118,
+  "rows" : [
+    [
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "padding-bottom-xl padding-lg"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "4307d667-5aec-4f5f-a3d6-63381c43d602",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "77ad8ca3-3b8b-4b89-bc0a-189da67bc8cf",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "fragment",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "45fcb673-ed5c-4d0c-b5f9-22c8df48fa5b",
+                "hasValidationError" : false,
+                "id" : "headerProcess",
+                "binding" : { }
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<b>Extender Plazo - {{currentStage.denomination}}"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 3"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "11a148bb-15de-428f-9cfc-2e430256efe3",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "tabsContainer",
+                "dimension" : {
+                  "xs" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "mb-10"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "vertical" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "tabs"
+                  }
+                },
+                "reference" : "c0f56ada-33f1-4f86-b219-d1a7c9bb818c",
+                "hasValidationError" : false,
+                "id" : "pbTabsContainer",
+                "tabList" : [
+                  {
+                    "type" : "tabContainer",
+                    "dimension" : {
+                      "xs" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "disabled" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "title" : {
+                        "type" : "interpolation",
+                        "value" : "Estudiantes"
+                      }
+                    },
+                    "reference" : "10b657d5-6db5-43ac-9719-0d1e5e29cb3b",
+                    "hasValidationError" : false,
+                    "id" : "pbTabContainer",
+                    "container" : {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : { },
+                      "reference" : "4c43b8d3-67b1-412b-8622-3d6ec3b9f6cd",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "<b>Listado de Estudiantes</b>"
+                              },
+                              "level" : {
+                                "type" : "constant",
+                                "value" : "Level 4"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "1d136a7a-a53d-4d45-8dbe-bc11c4655221",
+                            "hasValidationError" : false,
+                            "id" : "pbTitle"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Default label"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "Los siguientes estudiantes aún no han calificado la ficha de seguimiento que se les asignó:"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "4a1bab54-78c6-4a34-8e61-35a7d8030f0d",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "headers" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "Nombre",
+                                  "Apellido",
+                                  "Correo",
+                                  "Ciclo",
+                                  "Paralelo"
+                                ]
+                              },
+                              "content" : {
+                                "type" : "expression",
+                                "value" : "studentsList"
+                              },
+                              "columnsKey" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "name",
+                                  "lastName",
+                                  "email",
+                                  "gradeNumber",
+                                  "gradeParallel"
+                                ]
+                              },
+                              "selectedRow" : {
+                                "type" : "variable",
+                                "value" : ""
+                              },
+                              "striped" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "condensed" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "bordered" : {
+                                "type" : "constant",
+                                "value" : true
+                              }
+                            },
+                            "reference" : "ad84e8ec-c292-4249-a903-6a26859ce24b",
+                            "hasValidationError" : false,
+                            "id" : "pbTable"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              }
+                            },
+                            "reference" : "94b39f26-2fa6-4914-834c-01c05bf8adc3",
+                            "hasValidationError" : false,
+                            "id" : "customSeparator"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "message" : {
+                                "type" : "constant",
+                                "value" : "<b> Aviso: </b> En la siguiente pestaña (Plazo) puede indicar si desea aumentar el plazo de días para que los estudiantes que aún  no han calificado puedan volver a calificar."
+                              },
+                              "show" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "type" : {
+                                "type" : "constant",
+                                "value" : "info"
+                              },
+                              "color" : {
+                                "type" : "constant"
+                              },
+                              "fontColor" : {
+                                "type" : "constant",
+                                "value" : false
+                              }
+                            },
+                            "reference" : "e1d538cb-d012-4a80-9d38-ff431a7ffb00",
+                            "hasValidationError" : false,
+                            "id" : "customAlertDanger"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              }
+                            },
+                            "reference" : "3d1f4542-804c-4524-85ed-b4d94d14b992",
+                            "hasValidationError" : false,
+                            "id" : "customSeparator"
+                          }
+                        ]
+                      ]
+                    }
+                  },
+                  {
+                    "type" : "tabContainer",
+                    "dimension" : {
+                      "xs" : 12
+                    },
+                    "propertyValues" : {
+                      "cssClasses" : {
+                        "type" : "constant",
+                        "value" : ""
+                      },
+                      "hidden" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "disabled" : {
+                        "type" : "constant",
+                        "value" : false
+                      },
+                      "title" : {
+                        "type" : "interpolation",
+                        "value" : "Plazo"
+                      }
+                    },
+                    "reference" : "60f91328-c946-43a2-b137-061110c2e133",
+                    "hasValidationError" : false,
+                    "id" : "pbTabContainer",
+                    "container" : {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : { },
+                      "reference" : "bf362fba-bd7d-472b-87a6-42ad91f35e12",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "<b>Extender el Plazo de Evaluación de Fichas</b>"
+                              },
+                              "level" : {
+                                "type" : "constant",
+                                "value" : "Level 4"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "338d84a6-331e-48a5-88be-e08f4d65702e",
+                            "hasValidationError" : false,
+                            "id" : "pbTitle"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Default label"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "Extender el plazo de evaluación de fichas de seguimiento a los sílabos para permitir calificar a los estudiantes que aún no han evaluado su ficha correspondiente ."
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              }
+                            },
+                            "reference" : "0e045c35-72d6-4938-8dfd-fe8bc7c942bc",
+                            "hasValidationError" : false,
+                            "id" : "pbText"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "message" : {
+                                "type" : "constant",
+                                "value" : "<b>Precaución</b>, en caso de no extender el plazo de calificación para los estudiantes, el proceso continuará con su flujo normal y se tabulará  solamente la información de las fichas que ya se encuentran calificadas."
+                              },
+                              "show" : {
+                                "type" : "expression",
+                                "value" : "!formInput.extend"
+                              },
+                              "type" : {
+                                "type" : "constant",
+                                "value" : "warning"
+                              },
+                              "color" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "fontColor" : {
+                                "type" : "constant",
+                                "value" : false
+                              }
+                            },
+                            "reference" : "fc6ac809-f022-45a1-b5e0-69bfa8d393fb",
+                            "hasValidationError" : false,
+                            "id" : "customAlertDanger"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 4
+                            },
+                            "propertyValues" : {
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "disabled" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Extender el Plazo"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "formInput.extend"
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : false
+                              }
+                            },
+                            "reference" : "60363679-b5f7-4b2a-9712-64ddc2d248f9",
+                            "hasValidationError" : false,
+                            "id" : "pbCheckbox",
+                            "description" : ""
+                          },
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 4
+                            },
+                            "propertyValues" : {
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "showDays"
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              },
+                              "readOnly" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Días:"
+                              },
+                              "placeholder" : {
+                                "type" : "constant"
+                              },
+                              "type" : {
+                                "type" : "constant",
+                                "value" : "number"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "value" : {
+                                "type" : "variable",
+                                "value" : "formInput.duration"
+                              },
+                              "required" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "minLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "maxLength" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "min" : {
+                                "type" : "constant",
+                                "value" : 1
+                              },
+                              "max" : {
+                                "type" : "constant",
+                                "value" : 31
+                              },
+                              "step" : {
+                                "type" : "constant",
+                                "value" : 1
+                              }
+                            },
+                            "reference" : "26aa8a70-4594-414a-83cc-18985b7bd473",
+                            "hasValidationError" : false,
+                            "id" : "pbInput",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              }
+                            },
+                            "reference" : "b5f812f7-3fc2-4f31-8ca2-e4b3f1b10980",
+                            "hasValidationError" : false,
+                            "id" : "customSeparator"
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : "bordered mb-10 pad-0"
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!formInput.extend"
+                              },
+                              "repeatedCollection" : {
+                                "type" : "variable",
+                                "value" : ""
+                              }
+                            },
+                            "reference" : "1d472726-69bc-43b2-81a3-cee0a29e3f59",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!formInput.extend"
+                                    },
+                                    "disabled" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "<b> Reemplazar estudiantes"
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "assignNewStudents"
+                                    }
+                                  },
+                                  "reference" : "836c28f8-da55-4fdc-93d5-747bd31236b5",
+                                  "hasValidationError" : false,
+                                  "id" : "pbCheckbox"
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12,
+                                    "sm" : 12,
+                                    "md" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!assignNewStudents"
+                                    },
+                                    "repeatedCollection" : {
+                                      "type" : "variable",
+                                      "value" : ""
+                                    }
+                                  },
+                                  "reference" : "69fbd364-87bd-46d5-9581-f708b4594375",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "<b>Ciclos con sílabos que aún no han sido calificados"
+                                          },
+                                          "level" : {
+                                            "type" : "constant",
+                                            "value" : "Level 4"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "left"
+                                          }
+                                        },
+                                        "reference" : "c6fc2a9d-099f-4cb2-96d5-9b22667a0ec1",
+                                        "hasValidationError" : false,
+                                        "id" : "pbTitle"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "message" : {
+                                            "type" : "constant",
+                                            "value" : "<b> Precaución: </b> La etapa actual es de <b> FINAL DE CICLO </b>, no se debe reemplazar los estudiantes. Los mismos estudiantes que calificaron en la etapa de mitad de ciclo, deben ser los responsables de evaluar en la presente etapa. Sin embargo, se permite reemplazar los estudiantes bajo su responsabilidad."
+                                          },
+                                          "show" : {
+                                            "type" : "expression",
+                                            "value" : "currentStage.denomination.toUpperCase().trim()  === 'FINAL DE CICLO'"
+                                          },
+                                          "type" : {
+                                            "type" : "constant",
+                                            "value" : "warning"
+                                          },
+                                          "color" : {
+                                            "type" : "constant"
+                                          },
+                                          "fontColor" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          }
+                                        },
+                                        "reference" : "7e46d4d6-a86d-45fa-a46f-dc237c52eb4c",
+                                        "hasValidationError" : false,
+                                        "id" : "customAlertDanger"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "labelHidden" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "label" : {
+                                            "type" : "interpolation",
+                                            "value" : "Default label"
+                                          },
+                                          "labelPosition" : {
+                                            "type" : "constant",
+                                            "value" : "top"
+                                          },
+                                          "labelWidth" : {
+                                            "type" : "constant",
+                                            "value" : 4
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : true
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "Por favor, seleccionar los estudiantes que desea reemplazar por los estudiantes de reserva. Tomar en cuenta, que se debe seleccionar los estudiantes que por motivos de fuerza mayor no pueden calificar la ficha de seguimiento al sílabo que se le asignó."
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "left"
+                                          }
+                                        },
+                                        "reference" : "e5789777-ec30-45c8-aa64-09cf7d099073",
+                                        "hasValidationError" : false,
+                                        "id" : "pbText"
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "xs" : 12,
+                                          "sm" : 12,
+                                          "md" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "value" : {
+                                            "type" : "constant",
+                                            "value" : "This is the initial value"
+                                          },
+                                          "color" : {
+                                            "type" : "constant",
+                                            "value" : "RebeccaPurple"
+                                          },
+                                          "background" : {
+                                            "type" : "constant",
+                                            "value" : "Yellow"
+                                          },
+                                          "grades" : {
+                                            "type" : "variable",
+                                            "value" : "gradesToBeEvaluated"
+                                          }
+                                        },
+                                        "reference" : "5bd7a15f-859a-4588-917c-8e33239ca0b0",
+                                        "hasValidationError" : false,
+                                        "id" : "customCheckTable"
+                                      }
+                                    ]
+                                  ]
+                                }
+                              ]
+                            ]
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "labelHidden" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!formOutput._submitError.message"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
+                              },
+                              "label" : {
+                                "type" : "interpolation"
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "<strong>Errores encontraddos</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "labelPosition" : {
+                                "type" : "constant",
+                                "value" : "top"
+                              },
+                              "labelWidth" : {
+                                "type" : "constant",
+                                "value" : 4
+                              }
+                            },
+                            "reference" : "910a0e34-2e42-4fe6-babf-696bc2bf0526",
+                            "hasValidationError" : false,
+                            "id" : "pbText",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "xs" : 12,
+                              "sm" : 12,
+                              "md" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "disabled" : {
+                                "type" : "expression",
+                                "value" : "$form.$invalid"
+                              },
+                              "label" : {
+                                "type" : "interpolation",
+                                "value" : "Finalizar"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "center"
+                              },
+                              "buttonStyle" : {
+                                "type" : "constant",
+                                "value" : "success"
+                              },
+                              "action" : {
+                                "type" : "constant",
+                                "value" : "Submit task"
+                              },
+                              "assign" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "url" : {
+                                "type" : "interpolation"
+                              },
+                              "responseStatusCode" : {
+                                "type" : "variable",
+                                "value" : ""
+                              },
+                              "dataToSend" : {
+                                "type" : "expression",
+                                "value" : "formOutput"
+                              },
+                              "dataFromSuccess" : {
+                                "type" : "variable",
+                                "value" : ""
+                              },
+                              "dataFromError" : {
+                                "type" : "variable",
+                                "value" : "formOutput._submitError"
+                              },
+                              "targetUrlOnSuccess" : {
+                                "type" : "interpolation",
+                                "value" : "/bonita"
+                              },
+                              "cancelText" : {
+                                "type" : "constant",
+                                "value" : "Cancelar"
+                              },
+                              "confirmText" : {
+                                "type" : "constant",
+                                "value" : "Sí, continuar"
+                              },
+                              "titleQuestion" : {
+                                "type" : "expression",
+                                "value" : "messageAlert"
+                              },
+                              "textQuestion" : {
+                                "type" : "expression",
+                                "value" : "textQuestion"
+                              }
+                            },
+                            "reference" : "962cdce8-0538-42d2-91f7-e36d3e8a89e0",
+                            "hasValidationError" : false,
+                            "id" : "customSubmitTaskBtn"
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "37cc0c0b-f91c-46ca-ae62-e9eb12f85e00",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "97305b74-a0e4-4718-850e-c17d16c1cf87",
+      "name" : "unlLogo.png",
+      "type" : "img",
+      "order" : 1,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "task" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}"
+      ],
+      "exposed" : false
+    },
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{",
+        "  \"duration\" : 1,",
+        "  \"extend\" : false",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "submit_errors_list" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.formOutput && $data.formOutput._submitError && $data.formOutput._submitError.explanations){",
+        "\tconst liElements = $data.formOutput._submitError.explanations",
+        "\t\t.filter(cause => cause !== null)",
+        "\t\t.map(cause => \"<li>\" + cause + \"</li>\")",
+        "\t\t.join('');",
+        "\tif(liElements){",
+        "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
+        "\t}",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "\tduration: $data.formInput.duration,",
+        "\textend: $data.formInput.extend,",
+        "\tgradesToChange: $data.gradesToBeEvaluated,",
+        "\treplaceStudentsInput: $data.assignNewStudents",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
+      ],
+      "exposed" : false
+    },
+    "showDays" : {
+      "type" : "expression",
+      "value" : [
+        "let hidden = true;",
+        "",
+        "if ($data.formInput.extend === true){",
+        "    hidden = false;",
+        "}",
+        "",
+        "return hidden;"
+      ],
+      "exposed" : false
+    },
+    "students" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseVariable/{{task.caseId}}/studentSyllabus"
+      ],
+      "exposed" : false
+    },
+    "studentsList" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.students){",
+        "    const list = JSON.parse($data.students.value);",
+        "    return list;",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "assignNewStudents" : {
+      "type" : "expression",
+      "value" : [
+        "return false;"
+      ],
+      "exposed" : false
+    },
+    "gradesToBeEvaluated" : {
+      "type" : "expression",
+      "value" : [
+        "function getOrderedGrades(studentsList) {",
+        "  const grades = [];",
+        "",
+        "  let results = studentsList;",
+        "",
+        "  for (let init = 0; init < results.length; init += 1) {",
+        "    ",
+        "    const currentGrade = {",
+        "      number: results[init].gradeNumber,",
+        "      parallel: results[init].gradeParallel,",
+        "      students: []",
+        "    };",
+        "    ",
+        "    const foundedGrade = $data.grades.find(grade => grade.parallel === currentGrade.parallel && grade.number === currentGrade.number);",
+        "    ",
+        "    currentGrade.amount  = foundedGrade.amount;",
+        "",
+        "    const currentStudent = {",
+        "      persistenceId: results[init].persistenceId,",
+        "      name: results[init].name,",
+        "      lastName: results[init].lastName,",
+        "      email: results[init].email,",
+        "      selected: false,",
+        "    };",
+        "",
+        "    if (!grades.some((compareGrade) => compareGrade.number === currentGrade.number",
+        "      && compareGrade.parallel === currentGrade.parallel)) {",
+        "      currentGrade.students.push(currentStudent);",
+        "      grades.push(currentGrade);",
+        "    } else {",
+        "      const grade = grades.find((gradeInline) => gradeInline.number === currentGrade.number",
+        "        && gradeInline.parallel === currentGrade.parallel);",
+        "      grade.students.push(currentStudent);",
+        "    }",
+        "  }",
+        "  return grades;",
+        "}",
+        "",
+        "if($data.studentsList){",
+        "    ",
+        "    const orderedGrades = getOrderedGrades($data.studentsList);",
+        "    ",
+        "    return orderedGrades;",
+        "}",
+        "",
+        "return [",
+        "    {",
+        "      number: 10,",
+        "      parallel: \"B\",",
+        "      amount: 2,",
+        "      students: [",
+        "        {",
+        "            persistenceId: '1',",
+        "            name: 'Jean Carlos' ,",
+        "            lastName: 'Alarcón Ochoa',",
+        "            email: 'jean.alarcon@unl.edu.ec',",
+        "            selected: false,",
+        "        },",
+        "        {",
+        "            persistenceId: '2',",
+        "            name: 'Juan Zapata' ,",
+        "            lastName: 'Alarcón Ochoa',",
+        "            email: 'jean.alarcon@unl.edu.ec',",
+        "            selected: false,",
+        "        },",
+        "        {",
+        "            persistenceId: '3',",
+        "            name: 'Juan Zapata' ,",
+        "            lastName: 'Alarcón Ochoa',",
+        "            email: 'jean.alarcon@unl.edu.ec',",
+        "            selected: false,",
+        "        },",
+        "      ]  ",
+        "    },",
+        "    {",
+        "      number: 10,",
+        "      parallel: \"A\",",
+        "      amount: 3,",
+        "      students: [",
+        "        {",
+        "            persistenceId: '4',",
+        "            name: 'Pepe Carlos' ,",
+        "            lastName: 'Alarcón Ochoa',",
+        "            email: 'jean.alarcon@unl.edu.ec',",
+        "            selected: false,",
+        "        },",
+        "        {",
+        "            persistenceId: '5',",
+        "            name: 'Juan Gerardo' ,",
+        "            lastName: 'Alarcón Ochoa',",
+        "            email: 'jean.alarcon@unl.edu.ec',",
+        "            selected: false,",
+        "        },",
+        "      ]  ",
+        "    }    ",
+        "];"
+      ],
+      "exposed" : false
+    },
+    "test" : {
+      "type" : "expression",
+      "value" : [
+        "console.log($data.currentStage, 'Stage');"
+      ],
+      "exposed" : false
+    },
+    "reserveGrades" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/caseVariable/{{task.caseId}}/reserveGradesString"
+      ],
+      "exposed" : false
+    },
+    "grades" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.reserveGrades) { ",
+        "    const list = JSON.parse($data.reserveGrades.value); ",
+        "    return list; ",
+        "}",
+        "return [];"
+      ],
+      "exposed" : false
+    },
+    "messageAlert" : {
+      "type" : "expression",
+      "value" : [
+        "if ($data.formInput.extend){",
+        "    if($data.assignNewStudents){",
+        "        $data.textQuestion = `Los estudiantes seleccionados serán reemplazados y se extenderá el plazo ${$data.formInput.duration} días`  ",
+        "        return '¿Está seguro de extender el plazo de calificación de sílabos reemplazando los estudiantes seleccionados?';",
+        "    } else {",
+        "        $data.textQuestion = `Se extenderá el plazo ${$data.formInput.duration} días`;",
+        "        return '¿Está seguro de extender el plazo de calificación de sílabos?';",
+        "    }",
+        "}else {",
+        "    $data.textQuestion = 'No se tabulará la información de los estudiantes que no han calificado, es una acción que no se puede revertir';  ",
+        "    return '¿Está seguro de continuar con el proceso sin extender el plazo?';",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "textQuestion" : {
+      "type" : "expression",
+      "value" : [
+        "return;"
+      ],
+      "exposed" : false
+    },
+    "currentStage" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.currentStage_ref.link}}"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "d11c9463-9919-4849-8aa9-3f52ede3f66a",
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
+}

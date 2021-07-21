@@ -1,0 +1,29 @@
+{
+  "modelVersion" : "2.0",
+  "id" : "customCheckTable",
+  "name" : "checkTable",
+  "lastUpdate" : 1613493602641,
+  "template" : "@customCheckTable.tpl.html",
+  "controller" : "@customCheckTable.ctrl.js",
+  "custom" : true,
+  "properties" : [
+    {
+      "label" : "Grades to be Evaluated",
+      "name" : "grades",
+      "type" : "text",
+      "bond" : "variable"
+    }
+  ],
+  "assets" : [
+    {
+      "id" : "9847676f-b769-4207-8343-fdefdd72fc0d",
+      "name" : "material-colors.min.css",
+      "type" : "css",
+      "order" : 1,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

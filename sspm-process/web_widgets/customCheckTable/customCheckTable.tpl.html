@@ -1,0 +1,29 @@
+<span ng-if="environment"><identicon name="{{environment.component.id}}" size="30" background-color="[255,255,255, 0]" foreground-color="[51,51,51]"></identicon> {{environment.component.name}}</span>
+
+<div ng-repeat="grade in properties.grades">
+    <h3>Ciclo {{grade.number}} paralelo "{{grade.parallel}}"</h3>
+   
+    <div class='alert'  ng-class="{'alert-info': grade.amount >= 2, 'alert-warning': grade.amount === 1, 'alert-danger': grade.amount === 0}">
+        <p class='f-20'><b>Cantidad de estudiantes de reserva:</b> {{grade.amount}} <br> 
+            <span ng-if="grade.amount === 0"><b>NO QUEDAN ESTUDIANTES DE RESERVA.</b></span>
+        </p> 
+    </div>
+    <table class="table table-striped table-condensed table-bordered">
+      <thead>
+        <tr>
+          <th class="text-center bg-grey-400" scope="col">REMPLAZAR</th>
+          <th class="text-center bg-grey-400" scope="col">NOMBRES</th>
+          <th class="text-center bg-grey-400" scope="col">APELLIDOS</th>
+          <th class="text-center bg-grey-400" scope="col">EMAIL INSTITUCIONAL</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr ng-repeat="student in grade.students">
+            <td class="text-center"><input type="checkbox" ng-disabled="grade.amount === 0 && !student.selected" ng-model="student.selected" ng-change="ctrl.isSelected(grade, student.selected)"></td>
+            <th scope="row" class='bg-grey-200 text-center' > {{student.name}}</th>
+            <th scope="row" class="bg-grey-200 text-center"> {{student.lastName}}</th>
+            <td scope="row" class="text-center"> {{student.email}}</td>
+          </tr>
+      </tbody>
+    </table>
+</div>

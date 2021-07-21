@@ -1,0 +1,57 @@
+<!-- The custom widget template is defined here
+   - You can use standard HTML tags and AngularJS built-in directives, scope and interpolation system
+   - Custom widget properties defined on the right can be used as variables in a templates with properties.newProperty
+   - Functions exposed in the controller can be used with ctrl.newFunction()
+   - You can use the 'environment' property injected in the scope when inside the Editor whiteboard. It allows to define a mockup
+     of the Custom Widget to be displayed in the whiteboard only. By default the widget is represented by an auto-generated icon
+     and its name (See the <span> below).
+-->
+ 
+<!--<span ng-if="environment"><identicon name="{{environment.component.id}}" size="30" background-color="[255,255,255, 0]" foreground-color="[51,51,51]"></identicon> {{environment.component.name}}</span>-->
+<!--ng-click="ctrl.toggleBackgroundColor()"-->
+<!--<div style="color: {{ properties.color }}; background-color: {{ backgroudColor }}" >-->
+<div ng-if="properties.show">
+    <!--Value is:  <i>{{ properties.value }}</i>. Click me to toggle background color-->
+    
+    
+    <button data-ng-click="accordion1 = !accordion1" class="btn btn-primary">Mostrar Contenido CSV </button>
+    <div data-ng-show="accordion1" class="panel panel-default" id='accordion'>
+      <div class="panel-body">
+        
+        <h2>Contenido del archivo csv</h2>
+        
+        
+        <div ng-repeat="cicle in properties.values">
+            <h3>Ciclo {{ cicle[0].cicle  }}</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th ng-repeat="header in properties.headerValues" scope="col">{{header}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                   <!--ng-if="$index > 0" -> INdex > 0-->
+                  <tr ng-if="properties.type === 'Sillabus'" ng-repeat="sillabus in cicle">
+                    <th scope="row" class='bg-success' > {{sillabus.name}}</th>
+                    <td> {{sillabus.teacher}}</td>
+                    <td> {{sillabus.cicle}}</td>
+                    <td> {{sillabus.parallel}} </td>
+                  </tr>
+                  
+                   <tr ng-if="properties.type === 'Students'" ng-repeat="student in cicle">
+                    <th scope="row" class='bg-success' > {{student.name}}</th>
+                    <td> {{student.lastName}}</td>
+                    <td> {{student.cicle}}</td>
+                    <td> {{student.parallel}}</td>
+                    <td> {{student.email}}</td>
+                    <td> {{student.rate}}</td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+    
+
+    
+</div>
