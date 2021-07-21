@@ -1,0 +1,40 @@
+# Tabulacion service dependencies
+/tabulation-service/node_modules
+/tabulation-service/*.docx
+/tabulation-service/myChart.png
+/tabulation-service/myIndicatorsChart.png
+/tabulation-service/docs
+
+
+# Bonita process dependencies
+
+/sspm-process/bin
+/sspm-process/.classpath
+/sspm-process/src-providedGroovy
+/sspm-process/template
+/sspm-process/h2_database
+/sspm-process/process_configurations
+/sspm-process/META-INF
+/sspm-process/.settings
+/sspm-process/target/
+/sspm-process/node/
+/sspm-process/node_modules/
+/sspm-process/build.properties
+
+#provided web widgets
+/sspm-process/web_widgets/pb*/
+
+#web component preferenes
+/sspm-process/web_widgets/.metadata
+/sspm-process/web_fragments/.metadata
+/sspm-process/web_page/.metadata
+/sspm-process/web_page/*/js
+/sspm-process/web_fragments/*/*.js
+/sspm-process/web_widgets/*/*.js
+!sspm-process/web_widgets/*/*.ctrl.js
+
+#bdm jar dependency is regenerate from bom.xml file
+/lib/bdm-client-pojo.jar
+
+#only used as user preferences
+/database_connectors_properties
