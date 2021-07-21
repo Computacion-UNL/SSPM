@@ -1,0 +1,15 @@
+{ 
+  "plugins": [],
+  "recurseDepth": 10,
+  "opts": {
+    "recurse": true,
+    "destination": "./docs/",
+    "encoding": "utf8",
+    "template": "./node_modules/minami"
+  },
+  "source": {
+    "include": ["src"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "node_modules"
+  }
+}
